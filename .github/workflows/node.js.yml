@@ -1,4 +1,4 @@
-name: Workflow for Codecov example-php
+name: Workflow for Codecov shift
 on: [push, pull_request]
 jobs:
   run:
