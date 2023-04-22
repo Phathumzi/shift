@@ -3,7 +3,7 @@
         'name' => 'codecov/example-php',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '2ffe5869342096fe3a0efc0bc5df89cf2766369b',
+        'reference' => '6933aabf68b3d53c4bca31883368d3ef976fa1a9',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'codecov/example-php' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '2ffe5869342096fe3a0efc0bc5df89cf2766369b',
+            'reference' => '6933aabf68b3d53c4bca31883368d3ef976fa1a9',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
