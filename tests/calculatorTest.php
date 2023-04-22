@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-use Calculator\BasicCalculator;
+use App\Calculator;
 
 class calculatorTest extends PHPUnit\Framework\TestCase
 {
@@ -10,6 +10,6 @@ class calculatorTest extends PHPUnit\Framework\TestCase
      */
     public function testAdd()
     {
-        $this->assertEquals(BasicCalculator::add(1, 2), 3.0);
+        $this->assertEquals(Calculator::add(1, 2), 3.0);
     }
 }
