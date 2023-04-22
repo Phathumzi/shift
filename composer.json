@@ -19,7 +19,7 @@
     },
     "autoload": {
         "files": [
-            "signin.php"
+            "login.php"
         ]
     }
 }
