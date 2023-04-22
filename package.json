@@ -1,0 +1,23 @@
+{
+  "name": "shift",
+  "version": "1.0.0",
+  "description": "Shift-ONLINE Gaming Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phathumzi/shift.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phathumzi/shift/issues"
+  },
+  "homepage": "https://github.com/Phathumzi/shift#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
