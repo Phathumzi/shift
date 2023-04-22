@@ -1,5 +1,5 @@
 <?php
-
+//Connection to the Database
 $servername = 'eu-cdbr-west-03.cleardb.net';
 $username = 'b1f91cc87f0529';
 $password = 'fee6eb8a';
