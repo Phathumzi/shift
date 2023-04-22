@@ -19,7 +19,7 @@
     },
     "autoload": {
         "files": [
-            "calculator/BasicCalculator.php"
+            "signin.php"
         ]
     }
 }
