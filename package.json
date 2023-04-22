@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Phathumzi/shift#readme",
   "devDependencies": {
     "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "composer": "^4.1.0"
   }
 }
