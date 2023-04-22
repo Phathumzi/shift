@@ -1,8 +1,8 @@
 <?php
 
-namespace Calculator;
+namespace App;
 
-class BasicCalculator
+class Calculator
 {
     public static function add(float $x, float $y)
     {

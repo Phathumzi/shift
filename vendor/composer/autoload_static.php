@@ -4,12 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2f25d3d8381ccc332b16b7eb99f40ae9
+class ComposerStaticInit2bd98ec53c98f915d150dfab99b45661
 {
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
-        'b72103f0149345b69d4dcbfe48158cf6' => __DIR__ . '/../..' . '/calculator/BasicCalculator.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -21,6 +20,10 @@ class ComposerStaticInit2f25d3d8381ccc332b16b7eb99f40ae9
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -36,6 +39,10 @@ class ComposerStaticInit2f25d3d8381ccc332b16b7eb99f40ae9
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
@@ -673,9 +680,9 @@ class ComposerStaticInit2f25d3d8381ccc332b16b7eb99f40ae9
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2f25d3d8381ccc332b16b7eb99f40ae9::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2f25d3d8381ccc332b16b7eb99f40ae9::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit2f25d3d8381ccc332b16b7eb99f40ae9::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2bd98ec53c98f915d150dfab99b45661::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2bd98ec53c98f915d150dfab99b45661::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2bd98ec53c98f915d150dfab99b45661::$classMap;
 
         }, null, ClassLoader::class);
     }
