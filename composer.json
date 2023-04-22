@@ -20,7 +20,6 @@
     "autoload": {
         "files": [
             "login.php"
-            "connection.php"
         ]
     }
 }
