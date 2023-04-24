@@ -14,9 +14,9 @@
 
     <div class="menu">
         <ul>
-            <li><a href="/connect4.php">Connect4</a></li>
-            <li><a href="/PvP(host)/player1(host).py">player1</a></li>
-            <li><a href="/PvP(host)/player2.py">player2</a></li>
+
+            <li><a href="http://localhost:3006/">CHECKERS</a></li>
+
 
 
 

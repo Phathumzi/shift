@@ -15,7 +15,7 @@ if (!isset($user_id)) {
 
 <head>
     <title>Home Page</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -28,10 +28,10 @@ if (!isset($user_id)) {
 
             <div class="menu">
                 <ul>
-                    <li><a href="/watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
+                    <li><a href="watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
                     <li> <a href="">MY PAST GAMES</a></li><!--sers will see the past games they've played-->
-                    <li><a href="/play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
-                    <li><a href="/Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->
+                    <li><a href="play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
+                    <li><a href="Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->
 
                 </ul>
             </div>
