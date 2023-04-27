@@ -32,7 +32,7 @@
                 <br>
             </p>
 
-            <button class="cn"><a href="checkersGame/dist/index.html">CHECKERS</a></button>
+            <button class="btnn"><a href="checkersGame/dist/index.php">CHECKERS</a></button>
 
 
         </div>

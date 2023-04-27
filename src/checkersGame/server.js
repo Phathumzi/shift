@@ -12,10 +12,10 @@ const games = {};
 app.use(express.static(`${__dirname}/dist`));
 
 app.get('/', (req, res) => {
-  res.sendFile(`${__dirname}/index.html`);
+  res.sendFile(`${__dirname}/index.php`);
 });
 
-const port = process.env.PORT || 3006;
+const port = process.env.PORT || 3000;
 
 io.on('connection', (socket) => {
   console.log('a user connected');
