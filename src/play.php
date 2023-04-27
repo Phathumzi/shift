@@ -31,7 +31,8 @@
             <p class="par">
                 <br>
             </p>
-            <button class="cn"><a href="http://localhost:3006/">CHECKERS</a></button>
+
+            <button class="cn"><a href="checkersGame/dist/index.html">CHECKERS</a></button>
 
 
         </div>
