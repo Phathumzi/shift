@@ -134,6 +134,8 @@ ul li a:hover{
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
+    color: #f0f2f7;
+    
 }
 
 .content .cn{
@@ -153,7 +155,7 @@ ul li a:hover{
 
 .content .cn a{
     text-decoration: none;
-    color: #000;
+    color: #f0f2f7;
     transition: .3s ease;
 }
 
@@ -217,7 +219,7 @@ ul li a:hover{
 .btnn{
     width: 240px;
     height: 40px;
-    background: #001236;
+    background: gray;
     border: none;
     margin-top: 30px;
     font-size: 18px;
