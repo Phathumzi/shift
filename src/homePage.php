@@ -2,7 +2,6 @@
 
 include 'connection.php';
 session_start();
-//user id taken from login page
 $user_id = $_SESSION['user_id'];
 
 if (!isset($user_id)) {
@@ -23,7 +22,7 @@ if (!isset($user_id)) {
     <div class="main">
         <div class="navbar">
             <div class="icon">
-                <h5 class="logo">shift</h5>
+                <h5 class="logo">SHIFT</h5>
             </div>
 
             <div class="menu">
@@ -32,14 +31,10 @@ if (!isset($user_id)) {
                     <li> <a href="">MY PAST GAMES</a></li><!--sers will see the past games they've played-->
                     <li><a href="play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
                     <li><a href="Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->
+                    <li><a href="logOUT.php">LOG OUT</a></li>
 
                 </ul>
             </div>
-            <!--Logout Button(Directed to the signin page-->
-            <div class="search">
-                <button type="button" class="btn btn-light" color=#fff><a href="logOUT.php">Logout</a></button>
-            </div>
-
         </div>
         <!--Not much here-->
         <div class="content">

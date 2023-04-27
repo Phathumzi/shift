@@ -2,26 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/app.css" />
-    <title>PLAY NOW PAGE</title>
+    <title>Play</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1> AVAILABLE GAMES</h1>
+    <!--Navigation Bar/Menu-->
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h5 class="logo">SHIFT</h5>
+            </div>
 
-    <div class="menu">
-        <ul>
+            <div class="menu">
+                <ul>
+                    <li><a href="watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
+                    <li> <a href="">PAST GAMES</a></li><!--sers will see the past games they've played-->
+                    <li><a href="Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->
+                    <li><a href="homepage.php">HOME</a></li>
 
-            <li><a href="http://localhost:3006/">CHECKERS</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!--Content-->
+        <div class="content">
+            <h1>Available Games</h1>
+            <p class="par">
+                <br>
+            </p>
+            <button class="cn"><a href="http://localhost:3006/">CHECKERS</a></button>
 
 
-
-
-        </ul>
+        </div>
     </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <?php
+
+
+
+
+    ?>
+
+
+
+
+
 
 
 

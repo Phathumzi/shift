@@ -43,10 +43,10 @@ if (isset($_POST['Account'])) {
         <div class="navbar">
             <div class="menu">
                 <ul>
-                    <li><a href="/watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
-                    <li> <a href="">MY PAST GAMES</a></li><!--Users will see the past games they've played-->
-                    <li><a href="/play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
-                    <li><a href="/homepage.php">HOME</a></li><!--Directed to the Homepage-->
+                    <li><a href="watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
+                    <li> <a href="">PAST GAMES</a></li><!--Users will see the past games they've played-->
+                    <li><a href="play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
+                    <li><a href="homepage.php">HOME</a></li><!--Directed to the Homepage-->
 
                 </ul>
             </div>
@@ -70,7 +70,7 @@ if (isset($_POST['Account'])) {
             <!--Username Information-->
             <div class="input-field">
                 <i class="bx bxs-user"></i>
-                <input type="text" name="update_username" value=<?php echo $fetch['username']; ?>>//
+                <input type="text" name="update_username" value=<?php echo $fetch['username']; ?>>
             </div>
             <!--Email-->
             <div class="input-field">
