@@ -17,7 +17,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
-                    <li> <a href="">PAST GAMES</a></li><!--sers will see the past games they've played-->
+                    <li> <a href="pastgames.php">PAST GAMES</a></li><!--sers will see the past games they've played-->
                     <li><a href="Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->
                     <li><a href="homepage.php">HOME</a></li>
 
@@ -32,7 +32,8 @@
                 <br>
             </p>
 
-            <button class="btnn"><a href="checkersGame/dist/index.php">CHECKERS</a></button>
+            <button class="btnn"><a href="http://localhost:3006/">CHECKERS</a></button>
+            <button class="btnn"><a href="checkersGame/dist/playerName.php">testing user name</a></button>
 
 
         </div>

@@ -17,7 +17,7 @@ if (isset($_POST['Account'])) {
     if (!empty($new_pass) || !empty($confirm_pass)) {
         if ($new_pass != $confirm_pass) {
             $message[] = 'passwords do not match!';
-        } else {//Saving the updated information to the information
+        } else { //Saving the updated information to the information
             mysqli_query($conn, "UPDATE heroku_63291ad8f31606c.users SET password = '$confirm_pass' WHERE userid = '$userid'") or die('query failed');
             $message[] = 'password updated successfully!';
         }
@@ -41,6 +41,9 @@ if (isset($_POST['Account'])) {
     <!--Naviagtion Information-->
     <div class="main">
         <div class="navbar">
+            <div class="icon">
+                <h5 class="logo">SHIFT</h5>
+            </div>
             <div class="menu">
                 <ul>
                     <li><a href="watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
@@ -50,6 +53,7 @@ if (isset($_POST['Account'])) {
 
                 </ul>
             </div>
+
         </div>
         <!--Getting the users stored information-->
         <?php

@@ -24,11 +24,10 @@ if (!isset($user_id)) {
             <div class="icon">
                 <h5 class="logo">SHIFT</h5>
             </div>
-
             <div class="menu">
                 <ul>
                     <li><a href="watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
-                    <li> <a href="">MY PAST GAMES</a></li><!--sers will see the past games they've played-->
+                    <li> <a href="pastgames.php">PAST GAMES</a></li><!--sers will see the past games they've played-->
                     <li><a href="play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
                     <li><a href="Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->
                     <li><a href="logOUT.php">LOG OUT</a></li>
@@ -43,7 +42,7 @@ if (!isset($user_id)) {
                 <br>
             </p>
 
-            <button class="cn"><a href="#">REFRESH</a></button>
+
 
 
         </div>

@@ -14,5 +14,5 @@ if ($count == 1) {
     $_SESSION['user_id'] = $row['userid'];
     header("Location: homePage.php");
 } else {
-    echo "Login failed. Invalid username or password!";
+    header("Location: signin.html");
 }
