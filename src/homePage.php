@@ -26,7 +26,7 @@ if (!isset($user_id)) {
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
+                    <li><a href="">SPECTATE</a></li><!--Users will watch real time games here-->
                     <li> <a href="pastgames.php">PAST GAMES</a></li><!--sers will see the past games they've played-->
                     <li><a href="play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
                     <li><a href="Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->

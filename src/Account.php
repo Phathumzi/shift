@@ -33,7 +33,7 @@ if (isset($_POST['Account'])) {
     <title>Account</title>
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
 </head>
 
@@ -46,8 +46,8 @@ if (isset($_POST['Account'])) {
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
-                    <li> <a href="">PAST GAMES</a></li><!--Users will see the past games they've played-->
+                    <li><a href="">SPECTATE</a></li><!--Users will watch real time games here-->
+                    <li> <a href="pastgames.php">PAST GAMES</a></li><!--Users will see the past games they've played-->
                     <li><a href="play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
                     <li><a href="homepage.php">HOME</a></li><!--Directed to the Homepage-->
 
@@ -94,6 +94,7 @@ if (isset($_POST['Account'])) {
             <input type="submit" value="update Profile" name="Account" class="btn solid" />
         </form>
     </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>
