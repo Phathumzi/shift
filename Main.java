@@ -76,5 +76,3 @@ class Player implements Runnable {
     }
 
 }
-
-
