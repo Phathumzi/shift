@@ -1,3 +1,7 @@
+<?php
+
+namespace App;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,6 +58,31 @@
 
             <?php
 
+
+            class pastgames
+            {
+
+                public static function getTable()
+                {
+
+                    $conn = mysqli_connect('eu-cdbr-west-03.cleardb.net', 'b1f91cc87f0529', 'fee6eb8a', 'heroku_63291ad8f31606c');
+                    $sql = "SELECT * FROM pastgames";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr><td>" . $row["player1"] . "</td><td>" . $row["player2"] . "</td><td>" . $row["won"] . "</td><tr>";
+                        }
+                    } else {
+                        echo "NO PAST GAMES YET";
+                    }
+
+
+
+                    $conn->close();
+                }
+            }
+
             $conn = mysqli_connect('eu-cdbr-west-03.cleardb.net', 'b1f91cc87f0529', 'fee6eb8a', 'heroku_63291ad8f31606c');
             $sql = "SELECT * FROM pastgames";
             $result = $conn->query($sql);
@@ -67,6 +96,9 @@
             }
 
             $conn->close();
+
+
+
 
             ?>
         </table>
