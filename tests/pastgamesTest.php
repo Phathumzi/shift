@@ -10,6 +10,6 @@ class pastgamesTest extends PHPUnit\Framework\TestCase
      */
     public function testconn()
     {
-        $this->assertNotEquals(pastgames::getTable(1, 2), 3.0);
+        $this->assertEquals(pastgames::getTable(), null);
     }
 }
