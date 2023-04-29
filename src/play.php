@@ -33,7 +33,7 @@
             </p>
 
             <button class="btnn"><a href="http://localhost:3006/">CHECKERS</a></button>
-            <button class="btnn"><a href="checkersGame/dist/playerName.php">testing user name</a></button>
+            <button class="btnn"><a href="/Checkers j/index.html">Practice CHECKERS</a></button>
 
 
         </div>
