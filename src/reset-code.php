@@ -10,7 +10,7 @@ if ($email == false) {
 
 <head>
     <meta charset="UTF-8">
-    <title>Create a New Password</title>
+    <title>Code Verification</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style2.css">
 </head>
@@ -19,12 +19,12 @@ if ($email == false) {
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form">
-                <form action="new-password.php" method="POST" autocomplete="off">
-                    <h2 class="text-center">New Password</h2>
+                <form action="reset-code.php" method="POST" autocomplete="off">
+                    <h2 class="text-center">Code Verification</h2>
                     <?php
                     if (isset($_SESSION['info'])) {
                     ?>
-                        <div class="alert alert-success text-center">
+                        <div class="alert alert-success text-center" style="padding: 0.4rem 0.4rem">
                             <?php echo $_SESSION['info']; ?>
                         </div>
                     <?php
@@ -44,13 +44,10 @@ if ($email == false) {
                     }
                     ?>
                     <div class="form-group">
-                        <input class="form-control" type="password" name="password" placeholder="Create new password" required>
+                        <input class="form-control" type="number" name="otp" placeholder="Enter code" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control" type="password" name="cpassword" placeholder="Confirm your password" required>
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control button" type="submit" name="change-password" value="Change">
+                        <input class="form-control button" type="submit" name="check-reset-otp" value="Submit">
                     </div>
                 </form>
             </div>
