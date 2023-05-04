@@ -7,6 +7,8 @@ function logOUT()
     session_unset();
     session_destroy();
     header("Location: signin.html");
+
+    return 0;
 }
 
 

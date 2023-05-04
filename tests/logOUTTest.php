@@ -10,7 +10,7 @@ class loginTest extends PHPUnit\Framework\TestCase
      */
     public function testlogin()
     {
-        $this->assertEquals(logOUT(1, 1), 0);
+        $this->assertEquals(logOUT(), 0);
     }
     /**
      * @covers App\Calculator
