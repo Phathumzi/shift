@@ -16,7 +16,6 @@ jobs:
       - name: Upload to Codecov
         uses: codecov/codecov-action@v2
         with:
-        codecov:
           token: 877c5d64-2cd2-406e-b2b2-4074ec271c85
           files: ./coverage.xml
           verbose: true
