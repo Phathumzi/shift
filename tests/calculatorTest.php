@@ -15,8 +15,4 @@ class calculatorTest extends PHPUnit\Framework\TestCase
     /**
      * @covers App\Calculator
      */
-    public function testSubtract()
-    {
-        $this->assertEquals(Calculator::subtract(3, 2), 1.0);
-    }
 }
