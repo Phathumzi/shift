@@ -10,13 +10,13 @@ class calculator2Test extends PHPUnit\Framework\TestCase
      */
     public function testSum()
     {
-        $this->assertEquals(Calculator2::add(1, 2), 3.0);
+        $this->assertEquals(Calculator2::sum(1, 2), 3.0);
     }
     /**
      * @covers App\Calculator
      */
     public function testMinus()
     {
-        $this->assertEquals(Calculator2::subtract(3, 2), 1.0);
+        $this->assertEquals(Calculator2::minus(3, 2), 1.0);
     }
 }
