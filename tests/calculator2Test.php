@@ -11,6 +11,7 @@ class calculator2Test extends PHPUnit\Framework\TestCase
     public function testAdd()
     {
         $this->assertEquals(Calculator2::add(1, 2), 3.0);
+        $this->assertEquals(Calculator2::add(2, 2), 4.0);
     }
     /**
      * @covers App\Calculator
