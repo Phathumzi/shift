@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 
 use App\Calculator2;
 
-class CalculatorTest2 extends PHPUnit\Framework\TestCase
+class calculator2Test extends PHPUnit\Framework\TestCase
 {
     /**
      * @covers App\Calculator
