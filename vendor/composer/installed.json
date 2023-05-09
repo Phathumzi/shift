@@ -30,7 +30,7 @@
             },
             "time": "2022-12-30T00:23:10+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
@@ -102,7 +102,7 @@
             },
             "time": "2023-03-08T13:26:56+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "files": [
                     "src/DeepCopy/deep_copy.php"
@@ -168,7 +168,7 @@
                     "dev-master": "4.9-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "PhpParser\\": "lib/PhpParser"
@@ -223,7 +223,7 @@
                     "dev-master": "2.0.x-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -277,7 +277,7 @@
             },
             "time": "2022-02-21T01:04:05+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -355,7 +355,7 @@
                     "dev-master": "9.2-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -419,7 +419,7 @@
                     "dev-master": "3.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -486,7 +486,7 @@
                     "dev-master": "3.1-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -548,7 +548,7 @@
                     "dev-master": "2.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -610,7 +610,7 @@
                     "dev-master": "5.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -702,7 +702,7 @@
                     "dev-master": "9.6-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "files": [
                     "src/Framework/Assert/Functions.php"
@@ -778,7 +778,7 @@
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -837,7 +837,7 @@
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -896,7 +896,7 @@
                     "dev-master": "2.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -956,7 +956,7 @@
                     "dev-master": "4.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1032,7 +1032,7 @@
                     "dev-master": "2.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1065,17 +1065,17 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "4.0.4",
-            "version_normalized": "4.0.4.0",
+            "version": "4.0.5",
+            "version_normalized": "4.0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d"
+                "reference": "74be17022044ebaaecfdf0c5cd504fc9cd5a7131"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/3461e3fccc7cfdfc2720be910d3bd73c69be590d",
-                "reference": "3461e3fccc7cfdfc2720be910d3bd73c69be590d",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/74be17022044ebaaecfdf0c5cd504fc9cd5a7131",
+                "reference": "74be17022044ebaaecfdf0c5cd504fc9cd5a7131",
                 "shasum": ""
             },
             "require": {
@@ -1085,14 +1085,14 @@
                 "phpunit/phpunit": "^9.3",
                 "symfony/process": "^4.2 || ^5"
             },
-            "time": "2020-10-26T13:10:38+00:00",
+            "time": "2023-05-07T05:35:17+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "4.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1122,7 +1122,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
-                "source": "https://github.com/sebastianbergmann/diff/tree/4.0.4"
+                "source": "https://github.com/sebastianbergmann/diff/tree/4.0.5"
             },
             "funding": [
                 {
@@ -1163,7 +1163,7 @@
                     "dev-master": "5.1-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1228,7 +1228,7 @@
                     "dev-master": "4.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1312,7 +1312,7 @@
                     "dev-master": "5.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1374,7 +1374,7 @@
                     "dev-master": "1.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1435,7 +1435,7 @@
                     "dev-master": "4.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1493,7 +1493,7 @@
                     "dev-master": "2.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1551,7 +1551,7 @@
                     "dev-master": "4.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1617,7 +1617,7 @@
                     "dev-master": "3.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1675,7 +1675,7 @@
                     "dev-master": "3.2-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1731,7 +1731,7 @@
                     "dev-master": "3.0-dev"
                 }
             },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1785,7 +1785,7 @@
             },
             "time": "2021-07-28T10:34:58+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
                     "src/"
