@@ -1,19 +1,45 @@
+<?php
+include 'connection.php';
+session_start();
+$userid = $_SESSION['user_id'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>TicTacToe</title>
 </head>
 
 <body>
+    <?php
+    $select = mysqli_query($conn, "SELECT * FROM heroku_63291ad8f31606c.users WHERE userid = '$userid'") or die('query failed');
+    if (mysqli_num_rows($select) > 0) {
+        $fetch = mysqli_fetch_assoc($select);
+    }
+    ?>
     <div class="topDiv">
         <!-- <div class="headerDiv"> -->
         <h1>Tic Tac Toe</h1>
         <!-- </div> -->
-
+        <div>
+            <p class="player-1" id="player1">
+                <?php echo $fetch['username']; ?>
+            </p>
+        </div>
+        <div>
+            <p class="versus">
+                vs
+            </p>
+        </div>
+        <div>
+            <p class="player-2" id="player2">
+                player 2
+            </p>
+        </div>
         <div class="container" id="container">
 
             <div class="sidebar" id="sidebar">
@@ -48,6 +74,11 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div>
+        <p class="turn" id="turn">
+            HAVE FUN
+        </p>
     </div>
     <script src="clientScript.js" defer></script>
 </body>

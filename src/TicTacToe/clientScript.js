@@ -65,6 +65,8 @@ connectBtn.addEventListener('click', () => {
                 gameId = data.game.gameId
                 yourSymbol = data.game.players[1].symbol
                 console.log(`game id is ${gameId} and your symbol is ${yourSymbol}`)
+                const whos_turn = document.getElementById("turn");
+                whos_turn.innerText = `It's ${yourSymbol}'s turn`;
                 cells.forEach(cell => {
                     console.log(`cell classes are ${cell.classList}`)
                     cell.classList.remove('x')
@@ -93,14 +95,20 @@ connectBtn.addEventListener('click', () => {
                 game.players.forEach((player) => {
                     if (player.clientId == +clientId && player.isTurn == true) {
                         isTurn = true
-                        console.log(`your turn`)
+                        const show_player = document.getElementById("turn");
+                        show_player.innerText = `your turn`;
+                    } else if (player.clientId == +clientId && player.isTurn == false) {
+                        isTurn = false;
+                        const show_player = document.getElementById("turn");
+                        show_player.innerText = `opponent's turn`;
                     }
                 })
                 break
 
             case 'gameEnds':
                 console.log(`Winner is ${data.winner}`)
-                window.alert(`Winner is ${data.winner}`)
+                const show_winner = document.getElementById("turn");
+                show_winner.innerText = `Winner is ${data.winner}`;
                 break;
             case 'draw':
                 alert('Its a draw')
