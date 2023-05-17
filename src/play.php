@@ -33,7 +33,7 @@
             </p>
 
             <button class="btnn"><a href="http://localhost:3006/">CHECKERS</a></button>
-            <button class="btnn"><a href="/src/TicTacToe/index.php">Tic Tac Toe</a></button>
+            <button class="btnn"><a href="/src/TicTacToe/client.html">Tic Tac Toe</a></button>
             <button class="btnn"><a href="/Checkers j/index.html">Practice CHECKERS</a></button>
 
 
