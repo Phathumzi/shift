@@ -2,6 +2,11 @@
 
 namespace App;
 ?>
+<?php
+include 'connection.php';
+session_start();
+$userid = $_SESSION['user_id'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,6 +37,13 @@ namespace App;
 </head>
 
 <body>
+    <?php
+    $select = mysqli_query($conn, "SELECT username FROM heroku_63291ad8f31606c.users WHERE userid = '$userid'") or die('query failed');
+    if (mysqli_num_rows($select) > 0) {
+        $fetch = mysqli_fetch_assoc($select);
+        $username = $fetch['username'];
+    }
+    ?>
     <!--Naviagtion Information-->
     <div class="main">
         <div class="navbar">
@@ -66,7 +78,15 @@ namespace App;
                 {
 
                     $conn = mysqli_connect('eu-cdbr-west-03.cleardb.net', 'b1f91cc87f0529', 'fee6eb8a', 'heroku_63291ad8f31606c');
-                    $sql = "SELECT * FROM pastgames";
+                    $userid = $_SESSION['user_id'];
+                    $select = mysqli_query($conn, "SELECT username FROM heroku_63291ad8f31606c.users WHERE userid = '$userid'") or die('query failed');
+                    if (mysqli_num_rows($select) > 0) {
+                        $fetch = mysqli_fetch_assoc($select);
+                        $username = $fetch['username'];
+                    }
+
+                    $sql = "SELECT * FROM heroku_63291ad8f31606c.pastgames where player1='$username' or player2='$username'";
+
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
@@ -84,7 +104,7 @@ namespace App;
             }
 
             $conn = mysqli_connect('eu-cdbr-west-03.cleardb.net', 'b1f91cc87f0529', 'fee6eb8a', 'heroku_63291ad8f31606c');
-            $sql = "SELECT * FROM pastgames";
+            $sql = "SELECT * FROM heroku_63291ad8f31606c.pastgames where player1='$username' or player2='$username'";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {

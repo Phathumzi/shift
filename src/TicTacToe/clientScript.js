@@ -106,7 +106,6 @@ connectBtn.addEventListener('click', () => {
                 break
 
             case 'gameEnds':
-                console.log(`Winner is ${data.winner}`)
                 const show_winner = document.getElementById("turn");
                 show_winner.innerText = `Winner is ${data.winner}`;
                 break;

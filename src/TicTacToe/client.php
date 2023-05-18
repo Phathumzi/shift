@@ -54,8 +54,8 @@ $userid = $_SESSION['user_id'];
                         <li>No games </li>
                     </ul>
                     <button type="submit">Join</button>
-                    <button class="newGame" id="watchGame">watch Games</button>
-                    <button class="newGame" id="reviewGame">review game</button>
+                    <button class="newGame" id="watchGame">Watch Games</button>
+                    <button class="newGame" id="reviewGame">Review Game</button>
                 </div>
 
             </div>
