@@ -34,7 +34,7 @@
 
 
             <button class="btnn"><a href="http://127.0.0.1:8080/">CHECKERS</a></button>
-            <button class="btnn"><a href="/src/TicTacToe/index.php">Tic Tac Toe</a></button>
+            <button class="btnn"><a href="/src/TicTacToe/client.php">Tic Tac Toe</a></button>
             <button class="btnn"><a href="/Checkers j/index.html">Practice CHECKERS</a></button>
 
 
