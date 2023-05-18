@@ -47,15 +47,15 @@ app.get("/", function(req, res){
 });
 
 app.post("/start", function(req, res){
-    res.sendFile(__dirname + "/client/no-js.php");
+    res.sendFile(__dirname + "/client/no-js.php"); //used to begin game
 });
 
 app.post("/join", function(req, res){
-    res.sendFile(__dirname + "/client/no-js.php");
+    res.sendFile(__dirname + "/client/no-js.php"); //new game is added
 });
 
 http.listen(8080, function(){
-    console.log("Listening on http://127.0.0.1:8080/");
+    console.log("Listening on http://127.0.0.1:8080/"); //the used port
 });
 
 socket_list = {};
@@ -99,7 +99,7 @@ io.on("connection", function(socket){
         game.player1.emit("player joined", socket.player);
     });
 
-    socket.on("piece moved", function(origin, target){
+    socket.on("piece moved", function(origin, target){ //check the user's move
         var game = getGameByID(socket.gameID);
         if(game.player1.id == socket.id){
             game.player2.emit("move piece", origin, target);
@@ -113,7 +113,7 @@ io.on("connection", function(socket){
         }
     });
 
-    socket.on("piece removed", function(pieceRemoved, pieceColor){
+    socket.on("piece removed", function(pieceRemoved, pieceColor){ //used to take a piece out of the board
         var game = getGameByID(socket.gameID);
         if(pieceColor == "white"){ game.wps--; }
         else { game.bps--; }
@@ -133,7 +133,7 @@ io.on("connection", function(socket){
         }
     });
 
-    socket.on("request truce", function(){
+    socket.on("request truce", function(){ // request opponet for a draw
         var game = getGameByID(socket.gameID);
         if(game.player1.id == socket.id){
             game.player2.emit("truce requested");
@@ -143,7 +143,7 @@ io.on("connection", function(socket){
         }
     });
 
-    socket.on("accept truce", function(){
+    socket.on("accept truce", function(){ //used to accept a draw
         var game = getGameByID(socket.gameID);
         if(game.player1.id == socket.id){
             game.player2.emit("truce accepted");
@@ -163,7 +163,7 @@ io.on("connection", function(socket){
         }
     });
 
-    socket.on("disconnect", function(){
+    socket.on("disconnect", function(){ //user disconects from web
         if("gameID" in socket){
             var game = getGameByID(socket.gameID);
             if (game.player1.id == socket.id){
