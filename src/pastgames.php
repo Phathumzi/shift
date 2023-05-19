@@ -61,6 +61,10 @@ $userid = $_SESSION['user_id'];
             </div>
         </div>
         <h2 class="title">All CHECKERS PAST GAMES</h2>
+        <a class="pg" id="pg" href="PastGames/pg1/index.html">My Game 1</a>
+        <a class="pg" id="pg" href="PastGames/pg2/index.html">My Game 2</a>
+        <a class="pg" id="pg" href="PastGames/pg3/index.html">My Game 3</a>
+
         <table>
             <tr>
                 <th>PLAYER1</th>

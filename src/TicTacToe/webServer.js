@@ -95,7 +95,7 @@ function messageHandler(message) {
                 }
             })
             let isWinner = false
-            console.log(`game borad is ${games[msg.game.gameId].board}`)
+            console.log(`game board is ${games[msg.game.gameId].board}`)
             isWinner = WIN_STATES.some((row) => {
                 return row.every((cell) => { return games[msg.game.gameId].board[cell] == playerSymbol ? true : false })
             })

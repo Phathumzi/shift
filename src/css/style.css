@@ -1,64 +1,65 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.main{
+.main {
     width: 100%;
-    background: linear-gradient(-45deg, #fff ,#001236);
+    background: linear-gradient(-45deg, #fff, #001236);
     background-position: center;
     background-size: cover;
     height: 100vh;
     color: #fff;
 }
 
-.main title{
+.main title {
     color: #fff;
 }
 
-.navbar{
+.navbar {
     width: 1200px;
     height: 75px;
     margin: auto;
 }
 
-.icon{
+.icon {
     width: 200px;
     float: left;
     height: 70px;
 }
 
-.logo{
+.logo {
     color: #f0f2f7;
     font-size: 35px;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    ;
     padding-RIGHT: 20px;
     float: left;
     padding-top: 10px;
     margin-left: 10px;
 }
 
-.menu{
+.menu {
     width: 400px;
     float: left;
     height: 70px;
 }
 
-ul{
+ul {
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul li{
+ul li {
     list-style: none;
     margin-left: 62px;
     margin-top: 27px;
     font-size: 14px;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -66,18 +67,19 @@ ul li a{
     transition: 0.4s ease-in-out;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: #001236;
 }
 
-.search{
+.search {
     width: 330px;
     float: left;
     margin-left: 270px;
 }
 
-.srch{
-    font-family: 'Roboto', sans-serif;;
+.srch {
+    font-family: 'Roboto', sans-serif;
+    ;
     width: 200px;
     height: 40px;
     background: transparent;
@@ -92,7 +94,7 @@ ul li a:hover{
     border-top-left-radius: 5px;
 }
 
-.btn{
+.btn {
     width: 100px;
     height: 40px;
     background: #001236;
@@ -105,19 +107,20 @@ ul li a:hover{
     transition: 0.2s ease;
     cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     color: #fff;
 }
 
-.btn:focus{
+.btn:focus {
     outline: none;
 }
 
-.srch:focus{
+.srch:focus {
     outline: none;
 }
 
-.content{
+.content {
     width: 1200px;
     height: auto;
     margin: auto;
@@ -125,7 +128,7 @@ ul li a:hover{
     position: relative;
 }
 
-.content .par{
+.content .par {
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: 'Roboto', sans-serif;
@@ -133,17 +136,17 @@ ul li a:hover{
     line-height: 30px;
 }
 
-.content h1{
+.content h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 50px;
     padding-left: 20px;
     margin-top: 9%;
     letter-spacing: 2px;
     color: #f0f2f7;
-    
+
 }
 
-.content .cn{
+.content .cn {
     width: 160px;
     height: 40px;
     background: #fff;
@@ -155,37 +158,37 @@ ul li a:hover{
     cursor: pointer;
     transition: .4s ease;
     text-transform: capitalize;
-    
+
 }
 
-.content .cn a{
+.content .cn a {
     text-decoration: none;
     color: #f0f2f7;
     transition: .3s ease;
 }
 
-.cn:hover{
+.cn:hover {
     background-color: #3e3f42;
 }
 
-.content span{
+.content span {
     color: #001236;
     font-size: 65px
 }
 
-.form{
+.form {
     width: 250px;
     height: 380px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
     position: absolute;
     top: -20px;
     left: 870px;
-    transform: translate(0%,-5%);
+    transform: translate(0%, -5%);
     border-radius: 10px;
     padding: 25px;
 }
 
-.form h2{
+.form h2 {
     width: 100px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -197,7 +200,7 @@ ul li a:hover{
     padding: 8px;
 }
 
-.form input{
+.form input {
     width: 240px;
     height: 35px;
     background: transparent;
@@ -209,19 +212,19 @@ ul li a:hover{
     font-size: 15px;
     letter-spacing: 1px;
     margin-top: 30px;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.form input:focus{
+.form input:focus {
     outline: none;
 }
 
-::placeholder{
+::placeholder {
     color: #fff;
     font-family: Arial;
 }
 
-.btnn{
+.btnn {
     width: 240px;
     height: 40px;
     background: gray;
@@ -230,44 +233,66 @@ ul li a:hover{
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    color:black;
+    color: black;
     transition: 0.4s ease;
 }
-.btnn:hover{
+
+.btnn:hover {
     background: #fff;
     color: #001236;
 }
-.btnn a{
+
+.btnn a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
 }
-.form .link{
+
+.form .link {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     padding-top: 20px;
     text-align: center;
 }
-.form .link a{
+
+.form .link a {
     text-decoration: none;
     color: #fff;
 }
-.liw{
+
+.liw {
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
 }
-.icons a{
+
+.icons a {
     text-decoration: none;
     color: #fff;
 }
-.icons ion-icon{
+
+.icons ion-icon {
     color: #fff;
     font-size: 30px;
     padding-left: 14px;
     padding-top: 5px;
     transition: 0.3s ease;
 }
-.icons ion-icon:hover{
-    color:#001236;
+
+.icons ion-icon:hover {
+    color: #001236;
+}
+
+.pg {
+    width: 240px;
+    height: 40px;
+    background: gray;
+    border: none;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s ease;
 }
