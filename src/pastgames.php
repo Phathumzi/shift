@@ -56,11 +56,16 @@ $userid = $_SESSION['user_id'];
                     <li> <a href="">PAST GAMES</a></li><!--Users will see the past games they've played-->
                     <li><a href="play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
                     <li><a href="homepage.php">HOME</a></li><!--Directed to the Homepage-->
+                    <li><a href="Friends.php">FRIENDS</a></li><!--Users will be taken to the friends section-->
 
                 </ul>
             </div>
         </div>
         <h2 class="title">All CHECKERS PAST GAMES</h2>
+        <a class="pg" id="pg" href="PastGames/pg1/index.html">My Game 1</a>
+        <a class="pg" id="pg" href="PastGames/pg2/index.html">My Game 2</a>
+        <a class="pg" id="pg" href="PastGames/pg3/index.html">My Game 3</a>
+
         <table>
             <tr>
                 <th>PLAYER1</th>
