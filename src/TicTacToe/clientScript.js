@@ -6,7 +6,24 @@ let socket;
 let board;
 let game
 
+/*var mysql = require('mysql');
 
+var con = mysql.createConnection({
+    host: "eu-cdbr-west-03.cleardb.net",
+    user: "b1f91cc87f0529",
+    password: "fee6eb8a",
+    database: "heroku_63291ad8f31606c"
+});
+
+con.connect(function (err) {
+    if (err) throw err;
+    console.log("Connected!");
+    var sql = "insert into tictactoe(idtictactoe,player1,game,winner,player2) values (1,'jeff','x,x,x,x,x,x,x,x','jessica','jessica')";
+    con.query(sql, function (err, result) {
+        if (err) throw err;
+        console.log("1 record inserted");
+    });
+});*/
 
 const connectBtn = document.getElementById('connectBtn')
 const newGameBtn = document.getElementById('newGame')
@@ -18,7 +35,7 @@ const userCol = document.querySelector('.flex-col1')
 
 
 connectBtn.addEventListener('click', () => {
-    socket = new WebSocket('ws://localhost:8080')
+    socket = new WebSocket('ws://localhost:9080')
     socket.onopen = function (event) { }
     newGameBtn.addEventListener('click', () => {
         const payLoad = {
@@ -46,6 +63,7 @@ connectBtn.addEventListener('click', () => {
                 cells.forEach(cell => {
                     cell.classList.remove('x')
                     cell.classList.remove('cirlce')
+                    cell.classList.remove('o')
                 })
                 break
 
@@ -71,6 +89,7 @@ connectBtn.addEventListener('click', () => {
                     console.log(`cell classes are ${cell.classList}`)
                     cell.classList.remove('x')
                     cell.classList.remove('cirlce')
+                    cell.classList.remove('o')
 
                 })
                 break
@@ -110,7 +129,7 @@ connectBtn.addEventListener('click', () => {
                 show_winner.innerText = `Winner is ${data.winner}`;
                 break;
             case 'draw':
-                alert('Its a draw')
+                show_winner.innerText = `its a draw`;
                 break
         }
     }

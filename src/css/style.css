@@ -255,6 +255,18 @@ ul li a:hover {
     text-align: center;
 }
 
+.top {
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #2f0fce;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .form .link a {
     text-decoration: none;
     color: #fff;

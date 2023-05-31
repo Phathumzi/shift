@@ -24,6 +24,9 @@ $userid = $_SESSION['user_id'];
     <div class="topDiv">
         <!-- <div class="headerDiv"> -->
         <h1>Tic Tac Toe</h1>
+        <button class="backBtn" onclick="history.back()">
+            back
+        </button>
         <!-- </div> -->
         <div>
             <p class="player-1" id="player1">

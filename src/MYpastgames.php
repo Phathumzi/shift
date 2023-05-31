@@ -44,7 +44,59 @@
                 </ul>
             </div>
         </div>
-        <h2 class="title">All CHECKERS PAST GAMES</h2>
+        <h2 class="title">All Tic-Tac-Toe PAST GAMES</h2>
+        <table>
+            <tr>
+                <th>PLAYER1</th>
+                <th>PLAYER2</th>
+                <th>WINNER!</th>
+            </tr>
+
+            <?php
+
+            $conn = mysqli_connect('eu-cdbr-west-03.cleardb.net', 'b1f91cc87f0529', 'fee6eb8a', 'heroku_63291ad8f31606c');
+            $sql = "SELECT * FROM pastgames";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr><td>" . $row["player1"] . "</td><td>" . $row["player2"] . "</td><td>" . $row["won"] . "</td><tr>";
+                }
+            } else {
+                echo "NO PAST GAMES YET";
+            }
+
+            $conn->close();
+
+            ?>
+        </table>
+        <h2 class="title">All tictactoe PAST GAMES</h2>
+        <table>
+            <tr>
+                <th>PLAYER1</th>
+                <th>PLAYER2</th>
+                <th>WINNER!</th>
+            </tr>
+
+            <?php
+
+            $conn = mysqli_connect('eu-cdbr-west-03.cleardb.net', 'b1f91cc87f0529', 'fee6eb8a', 'heroku_63291ad8f31606c');
+            $sql = "SELECT * FROM pastgames";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr><td>" . $row["player1"] . "</td><td>" . $row["player2"] . "</td><td>" . $row["won"] . "</td><tr>";
+                }
+            } else {
+                echo "NO PAST GAMES YET";
+            }
+
+            $conn->close();
+
+            ?>
+        </table>
+        <h2 class="title">All rock paper scissors PAST GAMES</h2>
         <table>
             <tr>
                 <th>PLAYER1</th>

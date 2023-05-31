@@ -1,3 +1,21 @@
+/*var mysql = require('mysql');
+
+var con = mysql.createConnection({
+    host: "eu-cdbr-west-03.cleardb.net",
+    user: "b1f91cc87f0529",
+    password: "fee6eb8a",
+    database: "heroku_63291ad8f31606c"
+});
+
+con.connect(function (err) {
+    if (err) throw err;
+    console.log("Connected!");
+    con.query("SELECT * FROM heroku_63291ad8f31606c.users WHERE user = 'test1'", function (err, result, fields) {
+        if (err) throw err;
+        console.log(result);
+    });
+});
+*/
 const http = require('http')
 const WebSocket = require('websocket').server
 const games = {}
@@ -25,10 +43,10 @@ socketServer.on('request', request => {
     sendAvailableGames()
 })
 
-httpServer.listen(8080, () => { console.log('server listening on port 8080') })
+httpServer.listen(9080, () => { console.log('server listening on port 9080') })
 
 function connectionOpened() {
-    connection.send('connection with server opend')
+    connection.send('connection with server opened')
 }
 
 function messageHandler(message) {

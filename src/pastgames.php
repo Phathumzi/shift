@@ -48,6 +48,9 @@ $userid = $_SESSION['user_id'];
     <div class="main">
         <div class="navbar">
             <div class="icon">
+                <button class="top" onclick="history.back()">
+                    back
+                </button>
                 <h5 class="logo">SHIFT</h5>
             </div>
             <div class="menu">
@@ -124,6 +127,66 @@ $userid = $_SESSION['user_id'];
 
 
 
+
+            ?>
+        </table>
+        <h2 class="title">All Tic-Tac-Toe PAST GAMES</h2>
+        <a class="pg" id="pg" href="PastGames/tttpg1/client1.php">My Game 1</a>
+        <a class="pg" id="pg" href="PastGames/tttpg2/client1.php">My Game 2</a>
+        <a class="pg" id="pg" href="PastGames/tttpg3/client1.php">My Game 3</a>
+
+        <table>
+            <tr>
+                <th>PLAYER1</th>
+                <th>PLAYER2</th>
+                <th>WINNER!</th>
+            </tr>
+
+            <?php
+
+
+            class pastgames2
+            {
+
+                public static function getTable()
+                {
+
+                    $conn = mysqli_connect('eu-cdbr-west-03.cleardb.net', 'b1f91cc87f0529', 'fee6eb8a', 'heroku_63291ad8f31606c');
+                    $userid = $_SESSION['user_id'];
+                    $select = mysqli_query($conn, "SELECT username FROM heroku_63291ad8f31606c.users WHERE userid = '$userid'") or die('query failed');
+                    if (mysqli_num_rows($select) > 0) {
+                        $fetch = mysqli_fetch_assoc($select);
+                        $username = $fetch['username'];
+                    }
+
+                    $sql = "SELECT * FROM heroku_63291ad8f31606c.tictactoe where player1='$username' or player2='$username'";
+
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr><td>" . $row["player1"] . "</td><td>" . $row["player2"] . "</td><td>" . $row["won"] . "</td><tr>";
+                        }
+                    } else {
+                        echo "NO PAST GAMES YET";
+                    }
+                    $conn->close();
+                }
+            }
+
+            $conn = mysqli_connect('eu-cdbr-west-03.cleardb.net', 'b1f91cc87f0529', 'fee6eb8a', 'heroku_63291ad8f31606c');
+            $sql = "SELECT * FROM heroku_63291ad8f31606c.tictactoe where player1='$username' or player2='$username'";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr><td>" . $row["player1"] . "</td><td>" . $row["player2"] . "</td><td>" . $row["won"] . "</td><tr>";
+                }
+            } else {
+                echo "NO PAST GAMES YET";
+            }
+
+            $conn->close();
 
             ?>
         </table>
