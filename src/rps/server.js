@@ -14,20 +14,20 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/src/index.html');
 });
 
-io.on('connection', (socket) => {
+io.on('connection', (socket) => { //give me feedback after a user has connected
     console.log('a user connected');
     socket.on('disconnect', () => {
-        console.log('user disconnected');
+        console.log('user disconnected'); //give me feedback after a user has disconnected
     });
 
-    socket.on('createGame', () => {
+    socket.on('createGame', () => { // code will create a new game
         const roomUniqueId = makeid(6);
         rooms[roomUniqueId] = {};
         socket.join(roomUniqueId);
         socket.emit("newGame", {roomUniqueId: roomUniqueId})
     });
 
-    socket.on('joinGame', (data) => {
+    socket.on('joinGame', (data) => { // a player who is now a user can join a game that has been created
         if(rooms[data.roomUniqueId] != null) {
             socket.join(data.roomUniqueId);
             socket.to(data.roomUniqueId).emit("playersConnected", {});
@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
         }
     })
 
-    socket.on("p1Choice",(data)=>{
+    socket.on("p1Choice",(data)=>{ // this will show the choice made by player 1
         let rpsValue = data.rpsValue;
         rooms[data.roomUniqueId].p1Choice = rpsValue;
         socket.to(data.roomUniqueId).emit("p1Choice",{rpsValue : data.rpsValue});
@@ -60,26 +60,26 @@ function declareWinner(roomUniqueId) {
     let winner = null;
     if (p1Choice === p2Choice) {
         winner = "d";
-    } else if (p1Choice == "Paper") {
+    } else if (p1Choice == "Paper") { // player has selected  Paper
         if (p2Choice == "Scissor") {
             winner = "p2";
         } else {
             winner = "p1";
         }
-    } else if (p1Choice == "Rock") {
+    } else if (p1Choice == "Rock") { // player has selected  rock
         if (p2Choice == "Paper") {
             winner = "p2";
         } else {
             winner = "p1";
         }
-    } else if (p1Choice == "Scissor") {
+    } else if (p1Choice == "Scissor") { // player has selected scissor
         if (p2Choice == "Rock") {
             winner = "p2";
         } else {
             winner = "p1";
         }
     }
-    io.sockets.to(roomUniqueId).emit("result", {
+    io.sockets.to(roomUniqueId).emit("result", { //display the result to everyone
         winner: winner
     });
     rooms[roomUniqueId].p1Choice = null;
@@ -87,7 +87,7 @@ function declareWinner(roomUniqueId) {
 }
 
 server.listen(4000, () => {
-    console.log('listening on: http://localhost:4000/');
+    console.log('listening on: http://localhost:4000/'); // the port that we must listen to
 });
 
 function makeid(length) {
