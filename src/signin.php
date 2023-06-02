@@ -18,7 +18,7 @@ if ($conn->connect_error) {
     $stmt->execute();
     if(1==1){
 
-        $stmt = $conn->prepare("create table $username (FRIEND varchar(255)) " );
+        $stmt = $conn->prepare("create table $username (FRIEND varchar(255) , STATUS varchar(255)) " );
         $stmt->execute();
     
         
