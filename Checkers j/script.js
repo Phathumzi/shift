@@ -1,3 +1,4 @@
+//Initialization of the board
 const board = [
     null, 0, null, 1, null, 2, null, 3,
     4, null, 5, null, 6, null, 7, null,
@@ -9,23 +10,21 @@ const board = [
     20, null, 21, null, 22, null, 23, null
 ]
 
-
+//function to find the coressponding index of a piece in the board
 let findPiece = function (pieceId) {
     let parsed = parseInt(pieceId);
     return board.indexOf(parsed);
 };
 
-
+//Initialization of the all data such as who starts, the red and black pieces in the html file, the scores of each player ect.
 const cells = document.querySelectorAll("td");
 let redsPieces = document.querySelectorAll("p");
 let blacksPieces = document.querySelectorAll("span")
 const PlayerTurnText = document.querySelectorAll(".Player-turn-text");
-
-let turn = true;
-let redScore = 12;
-let blackScore = 12;
+let turn = true; //whose turn it is 
+let redScore = 12; //the score of the red pieces
+let blackScore = 12; //the score of the black pieces
 let playerPieces;
-
 let selectedPiece = {
     pieceId: -1,
     indexOfBoardPiece: -1,
@@ -51,20 +50,20 @@ changePlayer()
 givePiecesEventListeners();
 
 
-function givePiecesEventListeners() {
+function givePiecesEventListeners() { //make the pieces clickable
     if (turn) {
-        for (let i = 0; i < redsPieces.length; i++) {
+        for (let i = 0; i < redsPieces.length; i++) { // give clicks to red pieces
             redsPieces[i].addEventListener("click", getPlayerPieces);
         }
     } else {
-        for (let i = 0; i < blacksPieces.length; i++) {
+        for (let i = 0; i < blacksPieces.length; i++) { // give clicks to black pieces
             blacksPieces[i].addEventListener("click", getPlayerPieces);
         }
     }
 }
 
 
-function getPlayerPieces() {
+function getPlayerPieces() { //get the correct pieces of the player
     if (turn) {
         playerPieces = redsPieces;
     } else {
@@ -75,7 +74,7 @@ function getPlayerPieces() {
 }
 
 
-function removeCellonclick() {
+function removeCellonclick() { 
     for (let i = 0; i < cells.length; i++) {
         cells[i].removeAttribute("onclick");
     }
