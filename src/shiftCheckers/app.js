@@ -10,7 +10,7 @@ var io = require('socket.io')(http);
 var gameIDs = [];
 var games = [];
 
-var generateGameId = function(){
+var generateGameId = function(){ //used to generated game id
     var gameID = Math.floor(Math.random()*100000);
     console.log(gameID);
     while(true){
@@ -19,10 +19,12 @@ var generateGameId = function(){
             return gameID;
         }
         gameID = Math.floor(Math.random()*100000);
+
+        /////use this to send to database
     }
 }
 
-function getGameByID(IDKey){
+function getGameByID(IDKey){ 
     for(var i = 0; i < games.length; i++){
         if(games[i].id == IDKey){
             return games[i];
@@ -58,7 +60,7 @@ http.listen(8080, function(){
     console.log("Listening on http://127.0.0.1:8080/"); //the used port
 });
 
-socket_list = {};
+socket_list = {}; 
 
 io.on("connection", function(socket){
     socket.id = Math.random();
@@ -78,7 +80,7 @@ io.on("connection", function(socket){
         socket_list[socket.id].emit("game started", socket.gameID);
     });
 
-    socket.on("join game", function(form_data){
+    socket.on("join game", function(form_data){ // when game already connecd
         socket.player = form_data.player2name;
         var gameID = parseInt(form_data.gameid);
         var i = gameIDs.indexOf(gameID);

@@ -4,7 +4,8 @@
   "description": "Shift-ONLINE Gaming Platform",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "start": "nodemon src/shiftCheckers/app.js"
   },
   "repository": {
     "type": "git",

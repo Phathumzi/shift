@@ -17,9 +17,9 @@
             <div class="menu">
                 <ul>
                     <li><a href="">SPECTATE</a></li><!--Users will watch real time games here-->
-                    <li> <a href="pastgames.php">PAST GAMES</a></li><!--sers will see the past games they've played-->
+                    <li> <a href="MYpastgames.php">PAST GAMES</a></li><!--sers will see the past games they've played-->
                     <li><a href="Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->
-                    <li><a href="homepage.php">HOME</a></li>
+                    <li><a href="homePage.php">HOME</a></li>
                     <li><a href="Friends.php">FRIENDS</a></li><!--Users will be taken to the friends section-->
 
                 </ul>

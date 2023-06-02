@@ -3,6 +3,7 @@ session_start();
 require "connection.php";
 $email = "";
 $name = "";
+$result="";
 $errors = array();
 
 
@@ -64,7 +65,7 @@ if (isset($_POST['change-password'])) {
     if ($password !== $cpassword) {
         $errors['password'] = "Confirm password not matched!";
     } else {
-        $code = 0;
+        $code = null;
         $email = $_SESSION['email']; //getting this email using session
         //$encpass = password_hash($password, PASSWORD_BCRYPT);
         $update_pass = "UPDATE users SET code = $code, password = '$cpassword' WHERE email = '$email'";
@@ -78,6 +79,27 @@ if (isset($_POST['change-password'])) {
         }
     }
 }
+
+
+//FRIEND REQUEST QUERY
+if (isset($_POST['result'])) {
+  
+        $_SESSION['info'] = "";
+        $username = mysqli_real_escape_string($conn, $_POST['result']);
+        $check_code = "insert into $result (FRIEND) values( 'be-my-friend?')";
+        $code_res = mysqli_query($conn, $check_code);
+        if (mysqli_num_rows($code_res) > 0) {
+            
+            $info = "everything went well";
+            $_SESSION['info'] = $info;
+            header('location: requestSuccess.php');
+            exit();
+        } else {
+            $errors['otp-error'] = "resquest not sent";
+        }
+
+}
+
 
 //if login now button clicked
 if (isset($_POST['login-now'])) {

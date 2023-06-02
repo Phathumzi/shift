@@ -13,10 +13,16 @@ if ($conn->connect_error) {
     die('Connection Failed : ' . $conn->connect_error);
     echo ("Invalid username or email, try again!");
 } else {
-    $stmt = $conn->prepare("insert into users(username,email,password) values (?,?,?)");
+    $stmt = $conn->prepare("insert into users(username,email,password) values (?,?,?)" );
     $stmt->bind_param("sss", $username, $email, $password);
     $stmt->execute();
-    header("Location: signin.html");
+    if(1==1){
+
+        $stmt = $conn->prepare("create table $username (FRIEND varchar(255)) " );
+        $stmt->execute();
+    
+        
+        header("Location: signin.html");}
     $stmt->close();
     $conn->close();
 }
