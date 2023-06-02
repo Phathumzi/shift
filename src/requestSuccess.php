@@ -1,14 +1,47 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUCESSFULLY SENT</title>
+    <title>Friends</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/friends.css">
+    <script> function passvalues(){
+        var selectedUser = document.getElementById("txt").value;
+        localStorage.setItem("textvalue",selectedUser);
+        return false;
+    }</script>
 </head>
+
 <body>
-    
+    <!--Navigation Bar/Menu-->
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h5 class="logo">SHIFT</h5>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">SPECTATE</a></li><!--Users will watch real time games here-->
+                    <li> <a href="MYpastgames.php">PAST GAMES</a></li><!--sers will see the past games they've played-->
+                    <li><a href="Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->
+                    <li><a href="homePage.php">HOME</a></li><!-- User Directed to the homepage-->
+                    
+                </ul>
+            </div>
+
+        </div>
+        <!--Content-->
+        <div class="content">
+            <form action="" method="post" class="search-bar"><!--search bar contains css data-->
+            <H3> FRIEND REQUEST SENT!</H3>
+            <li >CHALLENGE YOUR FRIENDS NOW</li></form>        
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
 </body>
+
 </html>

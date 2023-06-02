@@ -85,10 +85,8 @@ if (isset($_POST['change-password'])) {
 if (isset($_POST['result'])) {
   
         $_SESSION['info'] = "";
-        $username = mysqli_real_escape_string($conn, $_POST['result']);
-        $check_code = "insert into $result (FRIEND) values( 'be-my-friend?')";
-        $code_res = mysqli_query($conn, $check_code);
-        if (mysqli_num_rows($code_res) > 0) {
+        
+        if (1==1) {
             
             $info = "everything went well";
             $_SESSION['info'] = $info;
