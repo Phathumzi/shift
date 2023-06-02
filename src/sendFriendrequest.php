@@ -36,7 +36,7 @@
                     </script>
                     </div>
                     <div class="form-group">
-                        <input class="form-control button" type="submit" name="result" value="Send Friend Request">
+                        <input class="form-control button" type="submit" name="result" value="ADD Friend">
                     </div>
                 </form>
             </div>

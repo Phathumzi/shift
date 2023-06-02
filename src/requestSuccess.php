@@ -34,8 +34,8 @@
         <!--Content-->
         <div class="content">
             <form action="" method="post" class="search-bar"><!--search bar contains css data-->
-            <H3> FRIEND REQUEST SENT!</H3>
-            <li >CHALLENGE YOUR FRIENDS NOW</li></form>        
+            <H3> NEW FRIEND ADDED</H3>
+            <li><a href="friends-table.php">view my friends</a></li>        
         </div>
     </div>
     </div>
