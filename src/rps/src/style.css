@@ -1,0 +1,133 @@
+:root {
+    --gradient: linear-gradient(90deg, #fc442b, rgb(107, 0, 107), #ee6352);
+    --grad: linear-gradient(90deg, #0099ff, rgb(0, 12, 187), #0099ff);
+    --grad2: linear-gradient(90deg, #00ff0d, rgb(29, 146, 0), #00ff0d);
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: black;
+    background: #ddd;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 15s infinite;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
+
+.content {
+    border: 4px dashed #fc442b;
+    border-radius: 5%;
+    margin: auto;
+    width: 60%;
+    background: white;
+    padding: 2em;
+    box-shadow: 0 0 6em rgba(0,0,0,.15);
+  }
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color: white;
+    line-height: .8;
+    
+    background-image: var(--gradient);
+    background-size: 300%;
+  }
+  
+  
+
+.images{
+    text-align: center;
+}
+
+.createGame {
+    font-size: 20px;
+    color: white;
+    border: 2px solid green;
+    border-radius: 7.5%;
+    cursor: pointer;
+    padding: 20px 40px;
+    background: var(--grad2);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 350ms;
+    margin-left: 27mm;
+    margin-right: 40mm;
+  }
+  
+  .createGame:hover {
+    background-position: right;
+  }
+
+  .form-control{
+    margin-left: 138mm;
+  }
+
+  .joinGame {
+    font-size: 20px;
+    color: white;
+    border: 2px solid  rgb(0, 12, 187);
+    border-radius: 7.5%;
+    cursor: pointer;
+    padding: 20px 40px;
+    background: var(--grad);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 500ms;
+    margin-left: 15mm;
+  }
+  
+  .joinGame:hover {
+    background-position: right;
+  }
+
+.play{
+    margin-left: 30%;
+    width: 50%;
+}
+
+.rock {
+    margin: 10px;
+    color: transparent;
+    background: url(./assets/rock.svg);
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+}
+
+.paper {
+    margin: 10px;
+    color: transparent;
+    background: url(./assets/paper.svg);
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+}
+
+.scissor {
+    margin: 10px;
+    color: transparent;
+    background: url(./assets/scissor.svg);
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    background-size: 200px;
+}
+
+.scoreBoard{
+  margin: auto;
+  width: 60%;
+}
