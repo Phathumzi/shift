@@ -37,7 +37,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="watch.php">SPECTATE</a></li><!--Users will watch real time games here-->
-                    <li> <a href="">PAST GAMES</a></li><!--Users will see the past games they've played-->
+                    <li> <a href="pastgames.php">PAST GAMES</a></li><!--Users will see the past games they've played-->
                     <li><a href="play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
                     <li><a href="homepage.php">HOME</a></li><!--Directed to the Homepage-->
 
