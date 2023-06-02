@@ -30,7 +30,7 @@ if (!isset($user_id)) {
                     <li> <a href="pastgames.php">PAST GAMES</a></li><!--sers will see the past games they've played-->
                     <li><a href="play.php">PLAY NOW!</a></li><!--Users are taken to where they will play games-->
                     <li><a href="Account.php">ACCOUNT</a></li><!--Directed to the Accounts page/should users want to update their info-->
-                    <li><a href="MYFRIENDS.">VIEW FRIENDS</a></li><!--Users will be taken to the friends section-->
+                    <li><a href="MYFRIENDS.php">VIEW FRIENDS</a></li><!--Users will be taken to the friends section-->
                     <li><a href="logOUT.php">LOG OUT</a></li>
 
                 </ul>
