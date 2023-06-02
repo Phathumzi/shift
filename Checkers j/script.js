@@ -17,10 +17,10 @@ let findPiece = function (pieceId) {
 };
 
 //Initialization of the all data such as who starts, the red and black pieces in the html file, the scores of each player ect.
-const cells = document.querySelectorAll("td");
-let redsPieces = document.querySelectorAll("p");
-let blacksPieces = document.querySelectorAll("span")
-const PlayerTurnText = document.querySelectorAll(".Player-turn-text");
+const cells = document.querySelectorAll("td"); //pull all the squares on the board from the html file
+let redsPieces = document.querySelectorAll("p"); //pull all the red pieces on the board from the html file
+let blacksPieces = document.querySelectorAll("span") //pull all the black pieces on the board from the html file
+const PlayerTurnText = document.querySelectorAll(".Player-turn-text"); //the heading that displays whose turn it is
 let turn = true; //whose turn it is 
 let redScore = 12; //the score of the red pieces
 let blackScore = 12; //the score of the black pieces
