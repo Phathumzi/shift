@@ -86,8 +86,8 @@ function declareWinner(roomUniqueId) {
     rooms[roomUniqueId].p2Choice = null;
 }
 
-server.listen(3000, () => {
-    console.log('listening on: http://localhost:3000/');
+server.listen(4000, () => {
+    console.log('listening on: http://localhost:4000/');
 });
 
 function makeid(length) {
